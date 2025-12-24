@@ -1,2 +1,3 @@
 # express-restaurant-api
-Public, GET-only REST API built with Express.js that serves realistic restaurant data for frontend practice, backend learning, and API consumption demos.
+
+A public Express.js REST API serving mock restaurant data for development and testing.

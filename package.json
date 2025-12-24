@@ -1,0 +1,24 @@
+{
+  "name": "express-restaurant-api-endpoint",
+  "version": "1.0.0",
+  "description": "A free, public, GET-only REST API built with Express.js that provides realistic restaurant data for frontend developers and beginners to practice API consumption.",
+  "keywords": [
+    "express",
+    "rest-api",
+    "mock-api",
+    "backend",
+    "restaurant-api",
+    "learning"
+  ],
+  "license": "ISC",
+  "author": "RSM Harsha",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -45,5 +45,7 @@ GET /api/v1/restaurants/:id
 ### Filter using query parameters
 
 GET /api/v1/restaurants?city=Bangalore
+
 GET /api/v1/restaurants?veg_only=true
+
 GET /api/v1/restaurants?cuisine_type=Indian

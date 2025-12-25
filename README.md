@@ -2,6 +2,8 @@
 
 A free, public, **GET-only REST API** built with **Express.js** that serves realistic restaurant data. Designed for **frontend practice**, **backend learning**, and **API consumption demos**.
 
+## 🚀 LIVE API - http://65.0.170.109:1404/api/v1/restaurants
+
 ## 🚀 Features
 
 - **Read-only (GET-only):** Safe for public consumption.

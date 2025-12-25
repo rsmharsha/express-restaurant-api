@@ -10,6 +10,16 @@ A free, public, **GET-only REST API** built with **Express.js** that serves real
 - **Filterable:** Specific data can be requested using query parameters.
 - **Beginner Friendly:** No authentication required—just fetch and go.
 
+## 🚦 Rate Limiting
+
+To prevent abuse and ensure fair usage, this API is rate-limited.
+
+- **Limit:** 100 requests per 15 minutes
+- **Scope:** Per IP address
+- **Response on limit exceeded:** `429 Too Many Requests`
+
+This helps keep the API stable and available for everyone.
+
 ## 📦 Tech Stack
 
 - **Runtime:** Node.js

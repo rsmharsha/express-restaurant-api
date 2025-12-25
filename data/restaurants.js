@@ -1,4 +1,4 @@
-const restaurants = [
+export const restaurants = [
     {
         id: 0,
         name: "Spice Route Kitchen",
@@ -1578,4 +1578,4 @@ const restaurants = [
 
 ];
 
-module.exports = restaurants;
+

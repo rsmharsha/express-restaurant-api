@@ -38,27 +38,38 @@ Retrieve a list of all 50 restaurant records.
 GET /api/v1/restaurants
 ```
 
-#### 2. Get Restaurant by ID
+#### 2. Get Restaurants by Filtering
 
-Retrieve details for a specific restaurant.
-
-```http
-GET /api/v1/restaurants/:id
-```
+Retrieve details for a specific restaurant or restaurants.
 
 ### ⚡ Filtering
 
 You can filter the results using query parameters.
 
-| Parameter      | Description                | Example Usage          |
-| -------------- | -------------------------- | ---------------------- |
-| `city`         | Filter by city location    | `?city=Bangalore`      |
-| `veg_only`     | Filter for vegetarian-only | `?veg_only=true`       |
-| `cuisine_type` | Filter by specific cuisine | `?cuisine_type=Indian` |
+| Parameter         | Description                | Example Usage           |
+| ----------------- | -------------------------- | ----------------------- |
+| `id`              | Filter by restaurant id    | `?id=Bangalor5`         |
+| `name`            | Filter by restaurant name  | `?name=Pasta Street`    |
+| `city`            | Filter by city location    | `?city=Bangalore`       |
+| `cuisine_type`    | Filter by specific cuisine | `?cuisine_type=Indian`  |
+| `veg_only`        | Filter for vegetarian-only | `?veg_only=true`        |
+| `is_open`         | Filter for is-open         | `?is_open=true`         |
+| `offers_delivery` | Filter for offers-delivery | `?offers_delivery=true` |
+
+You can filter the results using path parameters.
+
+| Parameter      | Description                | Example Usage           |
+| -------------- | -------------------------- | ----------------------- |
+| `city`         | Filter by city location    | `/city/mumbai`          |
+| `cuisine_type` | Filter by specific cuisine | `/cuisine_type/italian` |
+| `state`        | Filter by state            | `/state/maharashtra`    |
 
 #### **Examples**
 
 ```http
+# Get restaurants in delhi with mughlai cuisine
+GET /api/v1/restaurants?cuisine_type=mughlai&city=delhi
+
 # Get all restaurants in Bangalore
 GET /api/v1/restaurants?city=Bangalore
 

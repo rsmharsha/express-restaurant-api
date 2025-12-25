@@ -34,19 +34,19 @@ export const getAllData = (req, res) => {
         )
     }
 
-    if (veg_only) {
+    if (veg_only !== undefined) {
         filteredData = filteredData.filter(restaurant =>
             restaurant.veg_only === JSON.parse(veg_only.toLowerCase())
         )
     }
 
-    if (is_open) {
+    if (is_open !== undefined) {
         filteredData = filteredData.filter(restaurant =>
             restaurant.is_open === JSON.parse(is_open.toLowerCase())
         )
     }
 
-    if (offers_delivery) {
+    if (offers_delivery !== undefined) {
         filteredData = filteredData.filter(restaurant =>
             restaurant.offers_delivery === JSON.parse(offers_delivery.toLowerCase())
         )
